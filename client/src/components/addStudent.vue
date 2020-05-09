@@ -62,7 +62,7 @@ export default {
   methods: {
     post1: function() {
       this.$http
-        .post("http://localhost:8080/api/students", {
+        .post("http://localhost:8082/api/students", {
           fName: this.student.fName,
           lName: this.student.lName,
           rollNumber:this.student.rollNumber,

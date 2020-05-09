@@ -10,6 +10,8 @@ var router = require("express").Router();
 
   router.post("/students", students.create)
   router.get("/students", students.findAll);
+  router.get("/students/:rollNumber", students.findOne)
+
 
 
 // teacher routes

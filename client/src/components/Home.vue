@@ -57,7 +57,7 @@ export default {
   methods: {
     fetchRepos() {
       axios
-        .get(`http://localhost:8080/api/students/${this.rollnumber}`)
+        .get(`http://localhost:8082/api/students/${this.rollnumber}`)
         .then(response => {
           this.userData = response.data;
           console.log(this.userData);
